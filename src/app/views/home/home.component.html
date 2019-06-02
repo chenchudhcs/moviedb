@@ -2,9 +2,9 @@
 
 <form>
   <mat-form-field>
-    <input matInput placeholder="search tv show" [(ngModel)]="search" name="search">
+    <input matInput placeholder="search tv show" [(ngModel)]="query" name="query">
   </mat-form-field>
-  <button mat-raised-button color="primary" routerLink="/results">Search</button>
+  <button mat-raised-button color="primary" routerLink="/results/{{query}}" (click)="query">Search</button>
 
 </form>
 

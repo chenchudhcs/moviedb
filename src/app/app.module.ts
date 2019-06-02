@@ -7,9 +7,8 @@ import { MoviesComponent } from './views/results/movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './views/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {MatButtonModule, MatFormFieldModule, MatInputModule, MatTableModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
-import { ResultsComponent } from './results/results.component';
 import { DetailsComponent } from './views/details/details.component';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { DetailsComponent } from './views/details/details.component';
     AppComponent,
     MoviesComponent,
     HomeComponent,
-    ResultsComponent,
     DetailsComponent
   ],
   imports: [
@@ -28,7 +26,8 @@ import { DetailsComponent } from './views/details/details.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
