@@ -10,7 +10,8 @@ import {ActivatedRoute} from '@angular/router';
 export class MoviesComponent implements OnInit {
   query: string;
   title: string;
-
+  // movies: Movies[];
+  id: number;
   constructor(private moviedb: MoviedbService, private activatedRoute: ActivatedRoute) {
     this.query = this.activatedRoute.snapshot.paramMap.get('query');
   }
