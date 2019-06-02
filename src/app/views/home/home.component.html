@@ -1,0 +1,10 @@
+<!-- This is the Home page This is where the search bar is. When you click on the search button it will take you to the Search-results page-->
+
+<form>
+  <mat-form-field>
+    <input matInput placeholder="search tv show" [(ngModel)]="search" name="search">
+  </mat-form-field>
+  <button mat-raised-button color="primary" routerLink="/results">Search</button>
+
+</form>
+
